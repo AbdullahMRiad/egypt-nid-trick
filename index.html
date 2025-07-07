@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>بيانات الرقم القومي</title>
+    <link type="image/png" sizes="16x16" rel="icon" href="/icons/id-16.png" />
+    <link type="image/png" sizes="32x32" rel="icon" href="/icons/id-32.png" />
+    <link type="image/png" sizes="96x96" rel="icon" href="/icons/id-96.png" />
+    <link type="image/png" sizes="72x72" rel="icon" href="/icons/id-72.png" />
+    <link type="image/png" sizes="96x96" rel="icon" href="/icons/id-96.png" />
+    <link
+      rel="apple-touch-icon"
+      type="image/png"
+      sizes="57x57"
+      href="/icons/id-57.png" />
+    <link
+      rel="apple-touch-icon"
+      type="image/png"
+      sizes="60x60"
+      href="/icons/id-60.png" />
+    <link
+      rel="apple-touch-icon"
+      type="image/png"
+      sizes="72x72"
+      href="/icons/id-72.png" />
+    <link
+      rel="apple-touch-icon"
+      type="image/png"
+      sizes="76x76"
+      href="/icons/id-76.png" />
+    <meta name="msapplication-square70x70logo" content="/icons/id-70.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap" rel="stylesheet">
+    <link href="/src/style.tw.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="app" class="w-screen h-screen flex items-center justify-center">
+      <div
+        class="w-full h-full sm:w-96 sm:min-h-fit sm:max-h-2/3 sm:ring-yellow-300 sm:ring-2 sm:rounded-2xl sm:shadow-2xl sm:shadow-amber-500/40 p-2 flex flex-col items-center">
+        <label for="id-number" class="mt-2 mx-2 place-self-start"
+          >أدخل الرقم القومي لمعرفة بياناتك:</label
+        >
+        <input
+          id="id-number"
+          placeholder="الرقم القومي"
+          type="number"
+          minlength="14"
+          maxlength="14"
+          class="outline-0 focus:outline-0 border-0 focus:border-0 ring-2 ring-yellow-300 w-full my-2 h-10 p-2 rounded-4xl focus:ring-4 focus:ring-yellow-400 transition-all" />
+        <button
+          class="w-1/2 my-2 self-center h-10 bg-yellow-50 ring-2 ring-yellow-300 rounded-4xl hover:bg-yellow-300 active:bg-yellow-600 active:ring-yellow-600 active:scale-98 hover:scale-102 transition-all"
+          id="submit">
+          إرسال
+        </button>
+        <div
+          class="w-full h-fit mt-2 ring-yellow-300 ring-2 rounded-2xl p-2">
+          <p>تاريخ الميلاد: <span id="dob"></span></p>
+          <p>محافظة الميلاد: <span id="gov"></span></p>
+          <p>النوع: <span id="gen"></span></p>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

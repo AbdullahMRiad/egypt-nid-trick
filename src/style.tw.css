@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@theme {
+    --default-font-family: Vazirmatn;
+    --text-base: 1.25rem
+}
+
+body {
+    font-size: 1.125rem;
+}
